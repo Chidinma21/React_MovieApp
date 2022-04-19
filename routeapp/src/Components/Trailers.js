@@ -1,18 +1,5 @@
 import React from "react";
-// import Trailer from "./Trailer";
 import { useParams } from "react-router-dom";
-
-// const Trailers = ({ movies }) => {
-//   return (
-//     <div>
-//       {movies.map((movie) => {
-//         return <Trailer movie={movie} key={movie.id} />;
-//       })}
-//     </div>
-//   );
-// };
-
-// export default Trailers;
 
 function Trailers({ movies }) {
   const { id } = useParams();
@@ -33,9 +20,9 @@ function Trailers({ movies }) {
             height="415"
             src={data[0].videoUrl}
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       )}

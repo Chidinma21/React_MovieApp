@@ -6,7 +6,6 @@ import Header from "./Components/Header";
 import AddMovie from "./Components/AddMovie";
 import Footer from "./Components/Footer";
 import Trailers from "./Components/Trailers";
-// import Trailer from "./Components/Trailer";
 
 function App() {
   const [movies, setMovies] = useState([
